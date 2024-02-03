@@ -4,7 +4,7 @@ public class Main {
         int germansprechen = 58;
         int germanschreiben = 59;
         int germanlesen = 59;
-        int result1 = 132;// как сделать чтоьы три параметра складывались и тотал показывало трех параметров?
+        int result = 132;// как сделать чтобы три параметра складывались и тотал показывало трех параметров?
 
         if (germansprechen >= 60) {
             System.out.println("Gut");
@@ -15,10 +15,30 @@ public class Main {
         } else if (germanlesen >= 60) {
             System.out.println("Gut");
 
-        } else if (result1 >= 180 ) {
+        } else if (result >= 180 ) {
             System.out.println("Get certificate");
         } else {
                 System.out.println("Noch einmal");
             }
+        System.out.println();
+
+        int a = 1000;
+        boolean b = true;
+        long c = 1000L;
+        boolean d = false;
+
+        if (a < c) {
+
+            System.out.println(b);
+
+        } else if (c < a) {
+
+            System.out.println(d);
+        }
+        else {
+            System.out.println("Number incorrect");
         }
     }
+}
+
+
