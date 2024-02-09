@@ -59,7 +59,7 @@ public class Main {
         int[] array1 = {1, 2, 3, 4, 5, 6};
 
         for (int i = 9; i > 0; i--) {
-            for (int j = 1; j < 9; j++) {
+            for (int j = 1; j < 10; j++) {
                 System.out.println(i + " * " + j + "= " + i * j);
             }
             System.out.println();
