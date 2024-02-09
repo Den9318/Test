@@ -42,6 +42,18 @@ public class Main {
         }
     }
 
+        System.out.println("Size of array: ");
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int[] array = new int[size];
+        System.out.println("Enter number: ");
+
+        for(int i = 0; i < 5; ++i) {
+            array[i] = s.nextInt();
+        }
+
+        System.out.println(array.length);
+    }
 }
 
 
