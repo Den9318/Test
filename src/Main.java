@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static java.util.Collections.min;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -81,14 +83,26 @@ public class Main {
 //        while (j < 15);
 //    }
 //}
-        int[][] array = {{1, 2, 3, 4},
-                        {5, 6, 7, 8}};
+//        int[][] array = {{1, 2, 3, 4},
+//                        {5, 6, 7, 8}};
+//
+//        for (int y = 0; y < array.length; y++) {
+//            for (int g = 0; g < array[y].length; g++) {
+//                System.out.println(array[y][g]);
+//
+//            }
+//        }
+//    }
+//}
+        int[] num = {1, 2, 3, 15, 17};
+        int minElem = num[0];
 
-        for (int y = 0; y < array.length; y++) {
-            for (int g = 0; g < array[y].length; g++) {
-                System.out.println(array[0][2]);
-
+        for (int i = 1; i < num.length; i++) {
+            if (num[i] < minElem) {
+                minElem = num [i];
             }
+       System.out.println(minElem);
         }
     }
+
 }
