@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -38,6 +40,19 @@ public class Main {
         else {
             System.out.println("Number incorrect");
         }
+    }
+
+        System.out.println("Size of array: ");
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int[] array = new int[size];
+        System.out.println("Enter number: ");
+
+        for(int i = 0; i < 5; ++i) {
+            array[i] = s.nextInt();
+        }
+
+        System.out.println(array.length);
     }
 }
 
