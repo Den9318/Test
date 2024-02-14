@@ -98,7 +98,7 @@ public class Main {
 
     ////// куб числа
     public static int getPow(int value, int pwvalue) {
-        System.out.println("Число в кубе равно " + Math.pow(value, pwvalue));
+        System.out.println("Число в кубе равно: ");
 
        return value *pwvalue ;
   }
