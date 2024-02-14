@@ -63,14 +63,48 @@ public class Main {
 //            }
 //            System.out.println();
 //        }
-        int [][] num = {{1, 4, 5, 7}, {8, 10, 11, 22}};
-        for (int y = 0; y < num.length; y++) {
-            for (int g = 0; g < num[y].length; g++) {
-                System.out.println(num[y][g]);
-            }
-        }
+//        int [][] num = {{1, 4, 5, 7}, {8, 10, 11, 22}};
+//        for (int y = 0; y < num.length; y++) {
+//            for (int g = 0; g < num[y].length; g++) {
+//                System.out.println(num[y][g]);
+
+        System.out.println(getNumber(777, 44, 55, 100, 444));
+        System.out.println(getPow(3, 3));
     }
+
+    public static byte getNumber(byte a) {
+        return a;
+    }
+
+    public static double getNumber(double a, double b) {
+        return a + b;
+    }
+
+    public static long getNumber(long c) {
+        return c;
+    }
+
+    public static int getNumber(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static int getNumber(int a, int b, int c, int d) {
+        return a + b + c / d;
+    }
+
+    public static int getNumber(int a, int b, int c, int d, int e) {
+        return (a + b + c) / d * e;
+    }
+
+    ////// куб числа
+    public static int getPow(int value, int pwvalue) {
+        System.out.println("Число в кубе равно " + Math.pow(value, pwvalue));
+
+       return value *pwvalue ;
+  }
 }
+
+
 
 
 
