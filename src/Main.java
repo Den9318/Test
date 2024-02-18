@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
 //        int germansprechen = 58;
 //        int germanschreiben = 59;
 //        int germanlesen = 59;
@@ -68,8 +69,10 @@ public class Main {
 //            for (int g = 0; g < num[y].length; g++) {
 //                System.out.println(num[y][g]);
 
-        System.out.println(getNumber(777, 44, 55, 100, 444));
-        System.out.println(getPow(3, 3));
+//        System.out.println(getNumber(777, 44, 55, 100, 444));
+//        System.out.println(getPow(7, 3));
+
+        System.out.println(getOperation());
     }
 
     public static byte getNumber(byte a) {
@@ -98,11 +101,52 @@ public class Main {
 
     ////// куб числа
     public static int getPow(int value, int pwvalue) {
-        System.out.println("Число в кубе равно: " );
+        System.out.println("Число в кубе равно: ");
 
-        return (int) Math.pow( value, pwvalue);
-  }
+        return (int) Math.pow(value, pwvalue);
+    }
 }
+static Scanner scanner = new Scanner(System.in);
+
+
+public static char getOperation() {
+    System.out.println("Введите 1 число:");
+    int num1 = scanner.nextInt();
+    System.out.println("Введите 2 число:");
+    int num2 = scanner.nextInt();
+    System.out.println("Введите действие: ");
+    String action = scanner.nextLine();
+    action = scanner.nextLine();
+    switch (action) {
+        case "+":
+            int res1 = num1 + num2;
+            System.out.println("Результат сложения " + res1);
+            break;
+        case "-":
+            int res2 = num1 - num2;
+            System.out.println("Результат вычетания " + res2);
+            break;
+        case "*":
+            int res3 = num1 * num2;
+            System.out.println("Результат умножения " + res3);
+            break;
+        case "/":
+            int res4 = num1 / num2;
+            System.out.println("Результат деления " + res4);
+            break;
+
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
 
 
 
