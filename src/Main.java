@@ -104,24 +104,36 @@ public class Main {
 
         String con = "Concatenation";
 
-        System.out.println(con.substring(5,7));
+        System.out.println(con.substring(5, 7));
 
         ///3
 
         System.out.println();
 
-        String name="Denys";
+        String name = "Denys";
         String secondanme = "Orlov";
         String faculty = "Physic";
 
 
-        String sf1=String.format("Name is: %s",name);
-        String sf2=String.format("Second name is: %s", secondanme);
-        String sf3=String.format("value is: %s", faculty);
+        String sf1 = String.format("Name is: %s", name);
+        String sf2 = String.format("Second name is: %s", secondanme);
+        String sf3 = String.format("value is: %s", faculty);
 
         System.out.println(sf1);
         System.out.println(sf2);
         System.out.println(sf3);
 
+          System.out.println();
+
+        int[] array = {1, 2, 30, 112, 117};
+        int max = array [0];
+
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+
+        }
+            System.out.println(max);
     }
 }
