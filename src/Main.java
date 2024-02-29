@@ -1,12 +1,7 @@
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(getTelnumber("+380997668527"));
+//        System.out.println(getTelnumber("+380997668527"));
 //        System.out.println(getPow(3));
 //         System.out.println(getOperation());
 //         char [] array = {'@','#', '%', '^'};
@@ -136,34 +131,29 @@ public class Main {
 //            if (array[i] > max) {
 //                max = array[i];
 
+//                  System.out.println(max);
+//    }
 
         ///////////4
-    }
 
-    public static String getTelnumber(String number) {
+//    public static boolean getTelnumber(String number) {
+//
+//        Pattern patern = Pattern.compile("\\+380\\d{9}$");
+//        Matcher matcher = patern.matcher(number);
+//
+//        return matcher.find();
+//    }
+//}
 
-        String example = ("^\\+[\\(\\-]?(\\d[\\(\\)\\-]?){11}\\d$");
-        String correctnumber = "+380997668527";
-        correctnumber = number;
+        Machine machine1 = new Machine("Rav4");
+        Machine machine2 = new Machine("Rav6","4");
+        Machine machine3 = new Machine("Ra8");
 
+        machine1.setBody("6");
 
-        if (correctnumber == example) {
+        System.out.println(machine1);
 
-            Pattern patern = Pattern.compile("(\"^\\\\+[\\\\(\\\\-]?(\\\\d[\\\\(\\\\)\\\\-]?){11}\\\\d$\")");
-            Matcher matcher = patern.matcher(number);
-            System.out.println(matcher.find());
-            System.out.println("Correct");
+        System.out.println(machine2.getBody());
 
-        } else if (number.length() == 13) {
-            System.out.println("Accept");
-
-        } else {
-            System.out.println("Wrong");
-
-        }
-        return correctnumber;
     }
 }
-
-//            System.out.println(max);
-//    }
